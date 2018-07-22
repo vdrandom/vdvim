@@ -6,7 +6,7 @@
 	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "vim-polyglot"]
 	path = start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "vim-rsi"]
 	path = start/vim-rsi
 	url = https://github.com/tpope/vim-rsi.git
