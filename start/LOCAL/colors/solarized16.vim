@@ -2,7 +2,7 @@
 " Description:      Precision colors for machines and people
 " Maintainer:       Von Random
 " License:          OSI approved MIT license
-" Last Updated:     Mon Jul 16 2018
+" Last Updated:     Mon Aug 23 2018
 
 " Original authors: Ethan Schoonover http://ethanschoonover.com/solarized
 "                   Romain Lafourcade https://github.com/romainl/flattened
@@ -11,6 +11,8 @@
 " Re-flattened variant of Lifepillar's solarized8, because honestly, 256 color
 " approximation is entirely pointless and I do not want any options in a bloody
 " color scheme. It only supports truecolor and 16 colors hence the name.
+
+" solarized8 commit: 4dc4539c495722c48cdb6186cf3064581bb8156a
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 16)
@@ -322,8 +324,8 @@ if &background ==# 'dark'
   finish
 endif
 
-let g:terminal_ansi_colors = ['#eee8d5', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#073642',
-      \ '#fdf6e3', '#cb4b16', '#93a1a1', '#839496', '#657b83', '#6c71c4', '#586e75', '#002b36']
+let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#eee8d5',
+      \ '#002b36', '#cb4b16', '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
 hi Normal ctermfg=11 ctermbg=15 guifg=#657b83 guibg=#fdf6e3 guisp=NONE cterm=NONE gui=NONE
 hi FoldColumn ctermfg=11 ctermbg=7 guifg=#657b83 guibg=#eee8d5 guisp=NONE cterm=NONE gui=NONE
 hi Folded ctermfg=11 ctermbg=7 guifg=#657b83 guibg=#eee8d5 guisp=#fdf6e3 cterm=NONE,bold gui=NONE,bold
