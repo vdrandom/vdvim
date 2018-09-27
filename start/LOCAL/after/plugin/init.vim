@@ -68,8 +68,8 @@ if v:version >= 800
     autocmd FileType sh packadd ale
 
     if $TERM != 'linux'
-        set termguicolors background=dark
-        colorscheme gruvbox8
+        set background=light
+        colorscheme solarized16
     endif
 endif
 
