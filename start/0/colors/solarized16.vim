@@ -2,7 +2,7 @@
 " Description:      Precision colors for machines and people
 " Maintainer:       Von Random
 " License:          OSI approved MIT license
-" Last Updated:     Mon Aug 23 2018
+" Last Updated:     Mon Jan 28 2019
 
 " Original authors: Ethan Schoonover http://ethanschoonover.com/solarized
 "                   Romain Lafourcade https://github.com/romainl/flattened
@@ -12,7 +12,7 @@
 " approximation is entirely pointless and I do not want any options in a bloody
 " color scheme. It only supports truecolor and 16 colors hence the name.
 
-" solarized8 commit: 4dc4539c495722c48cdb6186cf3064581bb8156a
+" solarized8 commit: 4e511a561d95e7f8d3e0dbdea59cf018ca8c3035
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 16)
@@ -30,6 +30,26 @@ let g:colors_name = 'solarized16'
 if &background ==# 'dark'
   let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#eee8d5',
         \ '#002b36', '#cb4b16', '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
+  if has('nvim')
+    hi! link TermCursor Cursor
+    hi TermCursorNC ctermfg=8 ctermbg=10 guifg=#002b36 guibg=#586e75 guisp=NONE cterm=NONE gui=NONE
+    let g:terminal_color_0='#073642'
+    let g:terminal_color_1='#dc322f'
+    let g:terminal_color_2='#859900'
+    let g:terminal_color_3='#b58900'
+    let g:terminal_color_4='#268bd2'
+    let g:terminal_color_5='#d33682'
+    let g:terminal_color_6='#2aa198'
+    let g:terminal_color_7='#eee8d5'
+    let g:terminal_color_8='#002b36'
+    let g:terminal_color_9='#cb4b16'
+    let g:terminal_color_10='#586e75'
+    let g:terminal_color_11='#657b83'
+    let g:terminal_color_12='#839496'
+    let g:terminal_color_13='#6c71c4'
+    let g:terminal_color_14='#93a1a1'
+    let g:terminal_color_15='#fdf6e3'
+  endif
   hi Normal ctermfg=12 ctermbg=8 guifg=#839496 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
   hi FoldColumn ctermfg=12 ctermbg=0 guifg=#839496 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
   hi Folded ctermfg=12 ctermbg=0 guifg=#839496 guibg=#073642 guisp=#002b36 cterm=NONE,bold gui=NONE,bold
@@ -301,31 +321,31 @@ if &background ==# 'dark'
   hi pandocMetadataKey ctermfg=4 ctermbg=NONE guifg=#268bd2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi pandocMetadata ctermfg=4 ctermbg=NONE guifg=#268bd2 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
   hi! link pandocMetadataTitle pandocMetadata
-  if has('nvim')
-    hi! link TermCursor Cursor
-    hi TermCursorNC ctermfg=8 ctermbg=10 guifg=#002b36 guibg=#586e75 guisp=NONE cterm=NONE gui=NONE
-    let g:terminal_color_8='#002b36'
-    let g:terminal_color_0='#073642'
-    let g:terminal_color_10='#586e75'
-    let g:terminal_color_11='#657b83'
-    let g:terminal_color_12='#839496'
-    let g:terminal_color_14='#93a1a1'
-    let g:terminal_color_7='#eee8d5'
-    let g:terminal_color_15='#fdf6e3'
-    let g:terminal_color_3='#b58900'
-    let g:terminal_color_9='#cb4b16'
-    let g:terminal_color_1='#dc322f'
-    let g:terminal_color_5='#d33682'
-    let g:terminal_color_13='#6c71c4'
-    let g:terminal_color_4='#268bd2'
-    let g:terminal_color_6='#2aa198'
-    let g:terminal_color_2='#859900'
-  endif
   finish
 endif
 
 let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#eee8d5',
       \ '#002b36', '#cb4b16', '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
+if has('nvim')
+  hi! link TermCursor Cursor
+  hi TermCursorNC ctermfg=15 ctermbg=14 guifg=#fdf6e3 guibg=#93a1a1 guisp=NONE cterm=NONE gui=NONE
+  let g:terminal_color_0='#eee8d5'
+  let g:terminal_color_1='#dc322f'
+  let g:terminal_color_2='#859900'
+  let g:terminal_color_3='#b58900'
+  let g:terminal_color_4='#268bd2'
+  let g:terminal_color_5='#d33682'
+  let g:terminal_color_6='#2aa198'
+  let g:terminal_color_7='#073642'
+  let g:terminal_color_8='#fdf6e3'
+  let g:terminal_color_9='#cb4b16'
+  let g:terminal_color_10='#93a1a1'
+  let g:terminal_color_11='#839496'
+  let g:terminal_color_12='#657b83'
+  let g:terminal_color_13='#6c71c4'
+  let g:terminal_color_14='#586e75'
+  let g:terminal_color_15='#002b36'
+endif
 hi Normal ctermfg=11 ctermbg=15 guifg=#657b83 guibg=#fdf6e3 guisp=NONE cterm=NONE gui=NONE
 hi FoldColumn ctermfg=11 ctermbg=7 guifg=#657b83 guibg=#eee8d5 guisp=NONE cterm=NONE gui=NONE
 hi Folded ctermfg=11 ctermbg=7 guifg=#657b83 guibg=#eee8d5 guisp=#fdf6e3 cterm=NONE,bold gui=NONE,bold
@@ -597,24 +617,4 @@ hi pandocMetadata ctermfg=4 ctermbg=NONE guifg=#268bd2 guibg=NONE guisp=NONE cte
 hi pandocMetadataKey ctermfg=4 ctermbg=NONE guifg=#268bd2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi pandocMetadata ctermfg=4 ctermbg=NONE guifg=#268bd2 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi! link pandocMetadataTitle pandocMetadata
-if has('nvim')
-  hi! link TermCursor Cursor
-  hi TermCursorNC ctermfg=15 ctermbg=14 guifg=#fdf6e3 guibg=#93a1a1 guisp=NONE cterm=NONE gui=NONE
-  let g:terminal_color_8='#fdf6e3'
-  let g:terminal_color_0='#eee8d5'
-  let g:terminal_color_10='#93a1a1'
-  let g:terminal_color_11='#839496'
-  let g:terminal_color_12='#657b83'
-  let g:terminal_color_14='#586e75'
-  let g:terminal_color_7='#073642'
-  let g:terminal_color_15='#002b36'
-  let g:terminal_color_3='#b58900'
-  let g:terminal_color_9='#cb4b16'
-  let g:terminal_color_1='#dc322f'
-  let g:terminal_color_5='#d33682'
-  let g:terminal_color_13='#6c71c4'
-  let g:terminal_color_4='#268bd2'
-  let g:terminal_color_6='#2aa198'
-  let g:terminal_color_2='#859900'
-endif
 finish

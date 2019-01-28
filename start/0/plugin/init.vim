@@ -49,8 +49,6 @@ noremap <Leader>p "+p
 noremap <Leader>P "+P
 "move macro somewhere I won't accidentally use it
 noremap q <NOP>
-"Return in normal should insert new lines
-nnoremap <CR> o<ESC>k
 "quit / save
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>s :w<CR>
@@ -67,7 +65,10 @@ if v:version >= 800
     autocmd FileType python packadd ale | packadd jedi-vim
     autocmd FileType sh packadd ale
 
-    if $TERM != 'linux'
+    if $TERM =~ '^[rxvt\-unicode\-256color|tmux\-256color|st\-256color]' || has('gui_runnig')
+        set tgc background=dark
+        colorscheme gruvbox8
+    elseif $TERM != 'linux'
         set background=light
         colorscheme solarized16
     endif
