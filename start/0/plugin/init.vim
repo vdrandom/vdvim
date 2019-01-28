@@ -66,7 +66,7 @@ if v:version >= 800
     autocmd FileType sh packadd ale
 
     if $TERM =~ '^[rxvt\-unicode\-256color|tmux\-256color|st\-256color]' || has('gui_runnig')
-        set tgc background=dark
+        set termguicolors background=dark
         colorscheme gruvbox8
     elseif $TERM != 'linux'
         set background=light
