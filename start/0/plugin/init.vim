@@ -65,11 +65,7 @@ if v:version >= 800
     autocmd FileType python packadd ale | packadd jedi-vim
     autocmd FileType sh packadd ale
 
-    if $TERM =~ '^[rxvt\-unicode\-256color|tmux\-256color|st\-256color]' || has('gui_runnig')
-        set termguicolors background=dark
-        colorscheme gruvbox8
-    elseif $TERM != 'linux'
-        set background=light
+    if $TERM != 'linux'
         colorscheme solarized16
     endif
 endif
