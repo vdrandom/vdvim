@@ -15,7 +15,7 @@
 	url = https://github.com/mhinz/vim-signify.git
 [submodule "vim-tru-typewriter"]
 	path = start/vim-tru-typewriter
-	url = https://git.vdrandom.org/vim-tru-typewriter
+	url = https://mechanus.net/von/vim-tru-typewriter/
 [submodule "ale"]
 	path = opt/ale
 	url = https://github.com/w0rp/ale.git
