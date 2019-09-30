@@ -14,3 +14,5 @@ noremap q <NOP>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>s :w<CR>
 noremap <Leader>e :Explore<CR>
+noremap! <C-@> <C-^>
+noremap! <C-Space> <C-^>

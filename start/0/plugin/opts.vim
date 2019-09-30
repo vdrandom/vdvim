@@ -11,6 +11,7 @@ set tabstop=3 softtabstop=4 shiftwidth=4 smarttab expandtab autoindent
 set wildmenu showcmd ruler laststatus=2
 set statusline=[%F]\ %R%H%W%M\ %=[%{&fenc}/%{&ff}]\ %y\ [%4l/%L:%3v]
 set belloff=all colorcolumn=80 formatoptions+=j relativenumber breakindent
+set keymap=russian-jcukenwintype iminsert=0 imsearch=0
 
 if $TERM =~ '^screen'
     set t_ts=k t_fs=\
