@@ -13,15 +13,18 @@
 [submodule "vim-signify"]
 	path = start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
+[submodule "vim-solarized8"]
+	path = opt/solarized8
+	url = https://github.com/lifepillar/vim-solarized8
 [submodule "ale"]
 	path = opt/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "jedi-vim"]
 	path = opt/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
-[submodule "vimwiki"]
-	path = opt/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
 [submodule "vim-fugitive"]
 	path = start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vimwiki"]
+	path = opt/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
