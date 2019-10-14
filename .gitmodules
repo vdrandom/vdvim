@@ -14,8 +14,8 @@
 	path = start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
 [submodule "vim-solarized8"]
-	path = opt/solarized8
-	url = https://github.com/lifepillar/vim-solarized8
+	path = opt/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git
 [submodule "ale"]
 	path = opt/ale
 	url = https://github.com/w0rp/ale.git
